@@ -1,0 +1,191 @@
+:root {
+  --primary: #431904e3;       
+  --primary-dark: #391604e3;   
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-main: #212529;
+  --text-muted: #6c757d;
+  --border: #dee2e6;
+  --delay-bg: #e3aaaf;
+  --delay-text: #850f19;
+  --ontime-bg: #9bb3a8;
+  --ontime-text: #022c18;
+  --commuter-bg: #cfe2ff;
+  --commuter-text: #084298;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.app-header {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 1.25rem 0;
+  border-bottom: 3px solid var(--primary-dark);
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Controls Card */
+.controls-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.control-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0; 
+  font-size: 1rem;
+  color: var(--text-main);
+  background-color: #fff;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
+}
+
+/* Timetable Table */
+.table-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary);
+  color: var(--card-bg);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-commuter {
+  background-color: var(--commuter-bg);
+  color: var(--commuter-text);
+}
+
+.badge-long {
+  background-color: #e9ecef;
+  color: var(--text-main);
+}
+
+.status-ontime {
+  background-color: var(--ontime-bg);
+  color: var(--ontime-text);
+}
+
+.status-delayed {
+  background-color: var(--delay-bg);
+  color: var(--delay-text);
+}
+
+.track-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--border);
+  font-weight: 700;
+  background: #f8f9fa;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+}
+
+/* Footer for the application showing the data source */
+.app-footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+.app-footer a {
+  color: var(--primary);
+  text-decoration: underline;
+}

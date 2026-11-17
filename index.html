@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Train Station Timetables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <header class="app-header">
+    <div class="container">
+      <h1>Train Station Timetables</h1>
+      <p>Real-time train schedules that are powered by Digitraffic API.</p>
+    </div>
+  </header>
+
+    <!-- Controls -->
+    <main class="container">
+    <section class="controls-card" aria-label="Station Search Control">
+      <div class="control-group search-group">
+        <label for="station-search">Search Station</label>
+        <input 
+          type="text" 
+          id="station-search" 
+          list="stations-datalist"
+          placeholder="Type a station name or select it from the list (e.g. Helsinki, Tikkurila)..." 
+          autocomplete="off"
+        >
+        <!-- Native autocomplete suggestions -->
+        <datalist id="stations-datalist"></datalist>
+      </div>
+    </section>
+
+    <!-- Timetable Results -->
+    <section class="table-container">
+      <table id="timetable">
+        <thead>
+          <tr>
+            <th>Train / Line</th>
+            <th>Arrival / Departure</th>
+            <th>Route / Destination</th>
+            <th>Scheduled</th>
+            <th>Estimate / Status</th>
+            <th>Track</th>
+          </tr>
+        </thead>
+        <tbody id="timetable-body">
+          <!-- Rows injected dynamically from script.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <p>Data source: <a href="https://www.digitraffic.fi/en/railway-traffic/" target="_blank" rel="noopener">Fintraffic / Digitraffic.fi</a> (CC 4.0 BY)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
