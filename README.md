@@ -14,7 +14,10 @@ It is a responsive web application designed for people who travel by railways in
 - **Live Station Timetables:** Retrieves real-time arrival and departure data for the selected station, sorting trains chronologically from earliest to latest.
 - **Route, Track, and Status Displays:** Displays whether each train is arriving or departing, its origin and final destination, assigned platform track, and real-time status badges.
 
-### Wireframe / sketch
+### Wireframe / sketch (Made with Figma)
+
+<img width="2454" height="1579" alt="image" src="https://github.com/user-attachments/assets/cb1de8be-e65e-495c-bd4a-e8ae888d0c2a" />
+
 
 
 ---
@@ -48,6 +51,9 @@ It is a responsive web application designed for people who travel by railways in
 
 ## Screenshots
 
+<img width="1593" height="477" alt="image" src="https://github.com/user-attachments/assets/4ecd563d-1b7f-4e18-98b8-17d477e47f04" />
+
+<img width="1577" height="1248" alt="image" src="https://github.com/user-attachments/assets/d76a0234-6693-4bf9-aa2f-f365e5c762f3" />
 
 ---
 
@@ -60,7 +66,7 @@ It is a responsive web application designed for people who travel by railways in
 
 ## Self-assessment and learning reflection
 - **What did I succeed in?**  
-  I succeeded in building a working live timetable application native JavaScript, HTML, and CSS. I learned to use APIs and I succeeded in it so that the API fetches station metadata so that the app can translate short codes like HKI into full Finnish city names, and then displaying a clean transit-board style layout with all the needed information. I learned how to use APIs in my code and how to e.g. mark the copyrights of the API.
+  I succeeded in building a working live timetable application native JavaScript, HTML, and CSS. I learned to use APIs and I succeeded in it so that the API fetches station metadata so that the app can translate short codes like HKI into full Finnish city names, and then displaying a clean transit-board style layout with all the needed information. I learned how to use APIs in my code and how to e.g. mark the copyrights of the API. My friend advised me with the CSS, for example with the colors and how I can use colors like var(--primary) and other useful tips like that! I tried to reuse the same method throughout the whole css file. 
 - **What was challenging?**  
   The most challenging part was navigating the nested JSON structure returned by Digitraffic. It felt difficult at first to understand what are the features and parts that I must and want to include in the project. I used Gemini AI to help my selection and to help me with a basic layout for the javascript, which helped a lot. 
 - **What would I improve if I had more time?**  
