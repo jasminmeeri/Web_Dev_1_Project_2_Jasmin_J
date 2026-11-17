@@ -23,9 +23,9 @@ It is a responsive web application designed for people who travel by railways in
 ---
 
 ## Web links
-- **Published application on Netlify:** (https://jasminjtrainschedule.netlify.app/)
-- **GitHub repository:** (https://github.com/jasminmeeri/Web_Dev_1_Project_2_Jasmin_J/)
-- **Project video presentation:**
+- **Published application on Netlify:** https://jasminjtrainschedule.netlify.app/
+- **GitHub repository:** https://github.com/jasminmeeri/Web_Dev_1_Project_2_Jasmin_J/
+- **Project video presentation:** https://video.laurea.fi/media/Jasmin+J%C3%A4rvinen+Project+2+Video+Presentation/0_3z9a73kv
 
 ---
 
@@ -90,7 +90,7 @@ It is a responsive web application designed for people who travel by railways in
 
 ### AI tools used
 - **AI tool used:** Google Gemini
-- **How the tool was used:** Used mainly as a coding assistant and tutor to structure the native JavaScript. Gemini AI was used to help when being stuck with the javascript. It helped me find the parts of the Digitraffic website that I truly need in my simple application. I used Gemini AI to check that my copyright information is documented well enough and used it's suggestions to better it. All generated code was reviewed and tested according to my best knowledge and skills.
+- **How the tool was used:** Used mainly as a coding assistant and tutor to structure the native JavaScript. Gemini AI was used to help when being stuck with the javascript. It helped me find the parts of the Digitraffic website that I truly need in my simple application and to help me draft the javascript file, I checked if everything was needed or useful for the application step by step. I used Gemini AI to check that my copyright information is documented well enough and used it's suggestions to better it. All generated code was reviewed and tested according to my best knowledge and skills.
 
 
 
